@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  header {
+    color: #fff;
+  }
+  
+  nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  nav ul.navbar-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul.navbar-links li {
+    margin-right: 20px;
+  }
+  
+  nav ul.navbar-links li a {
+    color: #0e0d0d;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  nav ul.navbar-links li a:hover{
+    color: red; 
+   text-decoration: underline; 
+    cursor: pointer;
+  }
+ 
+  .logo {
+    width: 150px;
+    height: auto;
+  }  
+  
+
+
+.banner-img{
+   max-width: 100%; 
+  max-height: 100%;  
+ }   
+
+.dtails{
+margin: 20px 20px; 
+
+ }
+ .sectionA-container {
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+    justify-content: space-around;
+  }
+
+  .sectionA-container-img {
+    width: 33.33%; 
+    margin: 5px;
+    box-sizing: border-box;
+    
+    text-align: center; 
+    
+  }
+
+  .sectionA-container-img img {
+    width: 100%; 
+    height:80%; 
+    border: 2px solid #f5e7e7;
+   }
+  .sectionA-container-img h3{
+    font-size:30px;
+    color: red;
+    margin-bottom: 30px;
+  }
+  .float-container {
+    overflow: auto; 
+  }
+  
+  .float-container img {
+    float: right;
+    margin: 70px 10px 10px 10px; 
+    max-width: 70%;
+  }
+  .float-containerb img{
+    float:left;
+    margin: 20px 20px 10px 10px;
+    max-width: 70%; 
+  }
+  .custom-list {
+    margin: 20px 0;
+    padding: 0;
+  }
+  
+  .custom-list li {
+    margin-left: 150px; 
+    margin-bottom:5px; 
+    font-size:20px; 
+  }
+  
+  footer {
+    text-align: center; 
+    padding: 20px; 
+  }
+  
+  .navbar-links-footer {
+    list-style: none; 
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-links-footer li {
+    margin: 15px 15px; 
+  }
+  
+  .navbar-links-footer a {
+    text-decoration: none;
+  }
+  .navbar-links-footer ul{
+    margin-top: 50px;
+  }
+  a:hover{
+    color: red; 
+   text-decoration: underline; 
+    cursor: pointer;
+  }
+
+@media (max-width: 768px) {
+  .sectionA-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .sectionA-container-img {
+    width: 80%; 
+    margin: 10px auto; 
+  }
+
+  .sectionA-container-img h3 {
+    font-size: 24px; 
+    margin-bottom: 20px;
+  }
+
+  .float-container,
+  .float-containerb {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .float-container img,
+  .float-containerb img {
+    float: none; 
+    margin: 20px auto 10px; 
+    max-width: 100%; 
+  }
+
+  ul {
+    margin: 20px 0; 
+    padding-left: 20px; 
+  }
+
+  li {
+    font-size: 14px; 
+    line-height: 1.4; 
+  }
+
+  hr {
+    margin: 20px auto; 
+
+  footer .navbar-links-footer ul {
+    margin-top: 20px; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .sectionA-container-img {
+    width: 90%;
+    margin: 10px auto; 
+  }
+
+  .sectionA-container-img h3 {
+    font-size: 20px; 
+    margin-bottom: 15px;
+  }
+
+  .float-container img,
+  .float-containerb img {
+    margin: 15px auto 10px; 
+  }
+
+  ul {
+    margin: 15px 0; 
+    padding-left: 15px;
+  }
+
+  li {
+    font-size: 12px; 
+  }
+}
+
+}
+  
+   </style>
+   
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <img src="./images/logo.jpg" alt="Home-logo" class="logo" />
+        <ul class="navbar-links">
+          <li><a href="#home">About</a></li>
+          <li><a href="#about">Useful Resources</a></li>
+          <li><a href="#services">Support</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <img
+          class="banner-img"
+          src="./images/banner.png"
+          alt="Full Width Image"
+        />
+      </section>
+      <section>
+        <details class="dtails">
+          <summary style="font-size: 30px; color: brown">
+            What is Lorem Ipsum
+          </summary>
+          <p style="font-size: 20px; margin-bottom: 10px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit
+          </p>
+        </details>
+        <div class="sectionA-container">
+          <div class="sectionA-container-img">
+            <img src="./images/Jar.jpg" alt="" />
+            <h3>What is Lorem Ipsum?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+              et.Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+
+          <div class="sectionA-container-img">
+            <img src="./images/Jar.jpg" alt="" />
+            <h3>What is Lorem Ipsum?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+              et.Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+
+          <div class="sectionA-container-img">
+            <img src="./images/Jar.jpg" alt="" />
+            <h3>What is Lorem Ipsum?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum,
+              et.Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <details class="dtails" style="margin-top: 30px">
+          <summary style="font-size: 30px; color: brown">
+            What is Lorem Ipsum
+          </summary>
+          <p style="margin: 20px">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae
+            quasi vero ab doloribus praesentium. Non sint, aspernatur nulla
+            inventore reprehenderit aliquam mollitia. Quam ut doloribus non
+            neque excepturi labore eum inventore nulla? Perferendis mollitia
+            consequuntur, harum impedit quibusdam voluptatem quae voluptas
+            provident modi totam accusantium architecto, quos placeat repellat
+            dolorem.
+          </p>
+        </details>
+
+        <div class="float-container">
+          <img src="./images/carring.jpg" alt="Carrier-image" />
+          <div class="content">
+            <h4 style="margin: 20px 30px; color: red; font-size: 30px">
+              What is Lorem Ipsum
+            </h4>
+            <p style="font-size: 20px; margin: 0 5cqh">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Architecto incidunt voluptate deserunt vel rerum blanditiis
+              dignissimos amet qui et quidem, dolor neque fugiat voluptatum,
+              soluta, ipsam fugit officia in eligendi!
+            </p>
+            <ul class="custom-list">
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                ipsa itaque quasi vel unde dolores placeat, quia earum saepe.
+                Omnis.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                ipsa itaque quasi vel unde dolores placeat, quia earum saepe.
+                Omnis.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                ipsa itaque quasi vel unde dolores placeat, quia earum saepe.
+                Omnis.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="float-containerb">
+          <img src="./images/Jar.jpg" alt="Carrier-image" />
+          <div class="content">
+            <h4 style="font-size: 30px; color: red">What is Lorem Ipsum</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Architecto incidunt voluptate deserunt vel rerum blanditiis
+              dignissimos amet qui et quidem, dolor neque fugiat voluptatum,
+              soluta, ipsam fugit officia in eligendi!
+            </p>
+            <ul class="custom-list">
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                ipsa itaque quasi vel unde dolores placeat, quia earum saepe.
+                Omnis.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam ipsa itaque quasi vel unde dolores placeat, quia earum
+                saepe. Omnis.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                ipsa itaque quasi vel unde dolores placeat, quia earum saepe.
+                Omnis.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam ipsa itaque quasi vel unde dolores placeat, quia earum
+                saepe. Omnis.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                ipsa itaque quasi vel unde dolores placeat, quia earum saepe.
+                Omnis.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam ipsa itaque quasi vel unde dolores placeat, quia earum
+                saepe. Omnis.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                ipsa itaque quasi vel unde dolores placeat, quia earum saepe.
+                Omnis.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Magnam ipsa itaque quasi vel unde dolores placeat, quia earum
+                saepe. Omnis.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr style="color: red; margin: 20px" />
+      </section>
+      <footer>
+        <p>
+          * Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+          dolorem? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Alias, dolorem?
+        </p>
+        <p style="margin-top: 20px">
+          &gt;&gt; Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Excepturi, officiis.
+        </p>
+
+        <ul class="navbar-links-footer">
+          <li><a href="#home">About</a></li>
+          <li><a href="#about">Useful Resources</a></li>
+          <li><a href="#services">Support</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
